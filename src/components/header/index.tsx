@@ -11,14 +11,14 @@ export function Header() {
   };
 
   return (
-    <header className="flex justify-between md:justify-around items-center w-full max-w-screen mx-auto p-2 bg-cyan-950 text-zinc-300 fixed z-50">
+    <header className="flex justify-center items-center w-full max-w-screen mx-auto p-1 bg-cyan-950 bg-opacity-90 text-zinc-300 fixed z-50">
       <div className="flex gap-10 justify-between md:justify-around px-4 items-center max-w-[1200px] w-full">
         {/* Logo */}
         <div className="logo">
           <Image
             src="/logo.jpg"
-            width={80}
-            height={80}
+            width={60}
+            height={60}
             alt="Picture of the author"
             className="rounded-full"
           />
@@ -28,17 +28,17 @@ export function Header() {
         <nav className="hidden md:flex">
           <ul className="flex gap-4 space-x-10">
             <li>
-              <a href="#" className="text-gray-200 hover:text-red-600">
+              <a href="#" className="bg-cyan-950  text-white font-bold px-4 py-2 rounded-md border-zinc-300 border-2 hover:bg-red-800 border-none hover:text-zinc-50">
                 Home
               </a>
             </li>
             <li>
-              <a href="#" className="text-gray-200 hover:text-red-600">
+              <a href="#" className="bg-cyan-950  text-white font-bold px-4 py-2 rounded-md border-zinc-300 border-2 hover:bg-red-800 border-none hover:text-zinc-50">
                 Quem Somos
               </a>
             </li>
             <li>
-              <a href="#" className="text-gray-200 hover:text-red-600">
+              <a href="#" className="bg-cyan-950  text-white font-bold px-4 py-2 rounded-md border-zinc-300 border-2 hover:bg-red-800 border-none hover:text-zinc-50">
                 Serviços
               </a>
             </li>
@@ -57,7 +57,7 @@ export function Header() {
           <div className="md:hidden absolute top-16 left-0 w-full bg-cyan-950 p-4">
             <ul className="flex flex-col gap-4">
               <li>
-                <a href="#" className="text-gray-200 hover:text-red-600">
+                <a href="#" className="text-white font-bold px-4 py-2 rounded-md border-zinc-300 border-2 hover:bg-red-600">
                   Home
                 </a>
               </li>
@@ -79,7 +79,7 @@ export function Header() {
         <div className="hidden md:block cta-button">
           <a
             href="#"
-            className="bg-zinc-600 text-white px-4 py-2 rounded-full hover:bg-red-800 hover:text-zinc-50"
+            className="bg-cyan-950  text-white font-bold px-4 py-2 rounded-md border-zinc-300 border-1 hover:bg-red-800 hover:border-none hover:text-zinc-50"
           >
             Contato
           </a>
