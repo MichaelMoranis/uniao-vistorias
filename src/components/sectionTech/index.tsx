@@ -17,7 +17,7 @@ export default function SectionTech() {
           <h2 className="text-2xl font-bold mb-4 text-red-950">
             Tecnologia com foco no sucesso{" "}
           </h2>
-          <p className="text-center md:text-left mb-4 text-zinc-400">
+          <p className="md:text-left mb-4 text-zinc-400">
             Além de profissionais qualificados, qualidade no atendimento,
             transparência e comprometimento, acreditamos que a tecnologia faz
             toda a diferença para uma análise ágil, detalhada e eficiente. Por
@@ -25,7 +25,7 @@ export default function SectionTech() {
             nossos clientes.
           </p>
         </div>
-        <ul className="text-center md:text-left text-zinc-400">
+        <ul className="flex flex-col text-center gap-2 md:text-left text-zinc-400">
           <li className="flex items-center gap-2 text-sm">
             <span>
               <Image width={20} height={20} src="/double-check.png" alt="check" />
