@@ -11,7 +11,7 @@ export function Header() {
   };
 
   return (
-    <header className="flex justify-center items-center w-full max-w-screen mx-auto p-1 bg-cyan-950 bg-opacity-90 text-zinc-300 fixed z-50">
+    <header className="flex justify-center items-center w-full max-w-screen mx-auto p-1 bg-indigo-950 bg-opacity-90 text-zinc-300 fixed z-50">
       <div className="flex gap-10 justify-between md:justify-around px-4 items-center max-w-[1200px] w-full">
         {/* Logo */}
         <div className="logo">
@@ -28,17 +28,17 @@ export function Header() {
         <nav className="hidden md:flex">
           <ul className="flex gap-4 space-x-10">
             <li>
-              <a href="#" className="bg-cyan-950  text-white font-bold px-4 py-2 rounded-md border-zinc-300 border-2 hover:bg-red-800 border-none hover:text-zinc-50">
+              <a href="#" className="bg-indigo-950  text-white font-bold px-4 py-2 rounded-md border-zinc-300 border-2 hover:bg-red-800 border-none hover:text-zinc-50">
                 Home
               </a>
             </li>
             <li>
-              <a href="#" className="bg-cyan-950  text-white font-bold px-4 py-2 rounded-md border-zinc-300 border-2 hover:bg-red-800 border-none hover:text-zinc-50">
+              <a href="#" className="bg-indigo-950  text-white font-bold px-4 py-2 rounded-md border-zinc-300 border-2 hover:bg-red-800 border-none hover:text-zinc-50">
                 Quem Somos
               </a>
             </li>
             <li>
-              <a href="#" className="bg-cyan-950  text-white font-bold px-4 py-2 rounded-md border-zinc-300 border-2 hover:bg-red-800 border-none hover:text-zinc-50">
+              <a href="#" className="bg-indigo-950  text-white font-bold px-4 py-2 rounded-md border-zinc-300 border-2 hover:bg-red-800 border-none hover:text-zinc-50">
                 Serviços
               </a>
             </li>
@@ -54,7 +54,7 @@ export function Header() {
 
         {/* Menu de navegação móvel (aparece quando o menu hambúrguer é clicado) */}
         {isMenuOpen && (
-          <div className="md:hidden absolute top-16 left-0 w-full bg-cyan-950 p-4">
+          <div className="md:hidden absolute top-16 left-0 w-full bg-indigo-950 p-4">
             <ul className="flex flex-col gap-4">
               <li>
                 <a href="#" className="text-white font-bold px-4 py-2 rounded-md border-zinc-300 border-2 hover:bg-red-600">
@@ -79,7 +79,7 @@ export function Header() {
         <div className="hidden md:block cta-button">
           <a
             href="#"
-            className="bg-cyan-950  text-white font-bold px-4 py-2 rounded-md border-zinc-300 border-1 hover:bg-red-800 hover:border-none hover:text-zinc-50"
+            className="bg-indigo-950  text-white font-bold px-4 py-2 rounded-md border-zinc-300 border-1 hover:bg-red-800 hover:border-none hover:text-zinc-50"
           >
             Contato
           </a>

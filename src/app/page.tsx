@@ -7,7 +7,7 @@ import SectionTech from "@/components/sectionTech";
 
 export default function Home() {
   return (
-    <div>
+    <div className="w-full">
       <Banner />
       <ImageTextSection />
       <ExpertSection />

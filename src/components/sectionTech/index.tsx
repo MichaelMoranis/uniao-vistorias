@@ -5,7 +5,7 @@ export default function SectionTech() {
     <section className="flex w-full flex-col md:flex-row p-2 justify-center items-center gap-3">
       <div className="w-96 m-4 p-4 md:flex">
         <Image
-          src="/monitoring.png"
+          src="/mapa-uniao.png"
           alt="banner"
           width={500}
           height={200} // Garante que a imagem cubra o contêiner sem distorcer
@@ -15,7 +15,7 @@ export default function SectionTech() {
         <div className="flex flex-col">
           <p className="text-red-600">Inovação</p>
           <h2 className="text-2xl font-bold mb-4 text-red-950">
-            Tecnologia com foco no sucesso{" "}
+            Realizamos atendimento para todo o país !!{" "}
           </h2>
           <p className="md:text-left mb-4 text-zinc-400">
             Além de profissionais qualificados, qualidade no atendimento,
