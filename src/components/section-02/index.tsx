@@ -15,7 +15,7 @@ const Section2 = () => {
             height={400}// Garante que a imagem cubra o contêiner sem distorcer
           />
         </div>
-        <div className="flex flex-col text-center w-96 p-2 mx-4">
+        <div className="flex flex-col w-96 p-2 mx-4">
           <p className="text-red-600 mb-2">Quem Somos</p>
           <h2 className="text-2xl font-bold mx-4 mb-4 text-red-950">Especializados no ramo securitário </h2>
           <p className="text-center md:text-left m-auto text-zinc-400">
