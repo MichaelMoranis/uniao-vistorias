@@ -3,7 +3,7 @@ import Image from "next/image";
 export default function SectionTech() {
   return (
     <section className="flex w-full justify-center">
-      <div className="flex flex-col md:flex-row justify-between gap-10">
+      <div className="flex flex-col md:flex-row justify-between gap-10 m-6">
         <div className="flex justify-center w-full md:w-96">
           <Image
             src="/mapa-uniao.png"

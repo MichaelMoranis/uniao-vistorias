@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
 import { useState } from "react"; // Adicionado para controlar a visibilidade do menu
 
 export function Header() {
@@ -29,28 +30,28 @@ export function Header() {
         <nav className="hidden md:flex">
           <ul className="flex gap-1 space-x-5 md:space-x-8">
             <li>
-              <a
-                href="#"
-                className="bg-indigo-950  text-white font-bold px-4 py-1 rounded-md border-zinc-300 border-1 hover:bg-red-800 hover:border-none hover:text-zinc-50"
+              <Link
+                className="bg-indigo-950  text-white font-bold px-4 py-1 rounded-md border-zinc-300 border-1 hover:bg-red-800 hover:border-none hover:text-zinc-50 hover:shadow-sm p-6"
+                href="/"
               >
                 Home
-              </a>
+              </Link>
             </li>
             <li>
-              <a
-                href="#"
+              <Link
                 className="bg-indigo-950  text-white font-bold px-4 py-1 rounded-md border-zinc-300 border-1 hover:bg-red-800 hover:border-none hover:text-zinc-50"
+                href="/quemsomos"
               >
                 Quem somos
-              </a>
+              </Link>
             </li>
             <li>
-              <a
-                href="#"
-                className="bg-indigo-950  text-white font-bold px-4 py-1 rounded-md border-zinc-300 border-1 hover:bg-red-800 hover:border-none hover:text-zinc-50"
+              <Link
+                className="bg-indigo-950  text-white font-bold px-4 py-1 rounded-md border-zinc-300 border-1 hover:bg-red-800 hover:border-none hover:text-zinc-50 hover:shadow-sm p-6"
+                href="/#"
               >
                 Serviços
-              </a>
+              </Link>
             </li>
           </ul>
         </nav>

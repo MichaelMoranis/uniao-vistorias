@@ -1,12 +1,19 @@
 import React from "react";
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 
-const ImageTextSection = () => {
+interface ImageTextSectionProps {
+  text: string,
+  txtParag: string,
+  txt2: string
+  image: string | StaticImageData
+}
+
+const ImageTextSection = ({text, image, txtParag, txt2}: ImageTextSectionProps) => {
   return (
     <section className="flex flex-col justify-center gap-20 m-4 md:flex-row">
       <div className="flex justify-center md:justify-end">
         <Image
-          src="/uniao-circulo.png"
+        src={image}
           alt="banner"
           width={400}
           height={400} // Garante que a imagem cubra o contêiner sem distorcer
@@ -15,16 +22,13 @@ const ImageTextSection = () => {
       <div className="flex flex-col w-full md:w-96 p-2">
         <p className="text-red-600">Quem Somos</p>
         <h2 className="text-2xl font-bold mb-4 md:text-left text-red-950">
-          Especializados no ramo securitário{" "}
+          {text}
         </h2>
         <p className="flex flex-col w-full md:w-96 md:text-left">
-          Especializados no ramo de seguros, realizamos inspeções técnicas
-          detalhadas para diversas modalidades de riscos
+        {txtParag}
         </p>
         <p className=" w-full m-auto md:m-0 md:text-left text-zinc-400">
-          Além disso, oferecemos suporte técnico para riscos nomeados e
-          engenharia, garantindo a segurança e proteção do seu patrimônio
-          empresarial.
+        {txt2}
         </p>
       </div>
     </section>

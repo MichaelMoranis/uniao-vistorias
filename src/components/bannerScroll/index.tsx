@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function BannerScroll() {
   return (
-    <section className="flex flex-col justify-center items-center p-6 bg-blue-50">
+    <section className="flex flex-col justify-center items-center p-6 bg-zinc-100">
       <div className="flex justify-center items-center w-full">
         <h2 className="text-2xl md:text-center font-bold text-red-950 mt-6">
           Clientes que experimentaram e estão satisfeitos com nossas soluções
