@@ -9,19 +9,22 @@ const ImageTextSection = () => {
           src="/uniao-circulo.png"
           alt="banner"
           width={400}
-          height={400}// Garante que a imagem cubra o contêiner sem distorcer
+          height={400} // Garante que a imagem cubra o contêiner sem distorcer
         />
       </div>
-      <div className="flex flex-col w-full md:w-96 p-2 ml-4">
+      <div className="flex flex-col w-full md:w-96 p-2">
         <p className="text-red-600">Quem Somos</p>
-        <h2 className="text-2xl font-bold mb-4 md:text-left text-red-950">Especializados no ramo securitário </h2>
+        <h2 className="text-2xl font-bold mb-4 md:text-left text-red-950">
+          Especializados no ramo securitário{" "}
+        </h2>
         <p className="flex flex-col w-full md:w-96 md:text-left">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          Especializados no ramo de seguros, realizamos inspeções técnicas
+          detalhadas para diversas modalidades de riscos
         </p>
         <p className=" w-full m-auto md:m-0 md:text-left text-zinc-400">
-          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-          nisi ut aliquip ex ea commodo consequat.
+          Além disso, oferecemos suporte técnico para riscos nomeados e
+          engenharia, garantindo a segurança e proteção do seu patrimônio
+          empresarial.
         </p>
       </div>
     </section>

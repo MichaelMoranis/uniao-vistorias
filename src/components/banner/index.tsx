@@ -10,7 +10,7 @@ export function Banner() {
       <div className="absolute w-full top-1/3 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white z-10 px-4">
         <div className="flex flex-col justify-start items-center">
           <h1 className="text-4xl md:text-6xl mb-4">
-            Soluções únicas que geram <br /> resultados !
+            Soluções únicas que geram <br /> resultados eficientes !
           </h1>
         </div>
       </div>

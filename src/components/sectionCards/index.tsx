@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-export function ExpertSection() {
+export function SectionCards() {
   return (
     <section className="flex justify-center items-center p-2 md:flex-row mb-4 bg-gradient-to-l from-zinc-100 via-gray-100 to-zinc-100">
       <div className="flex flex-col w-full justify-center items-center p-2 text-center md:justify-end mb-8 md:mb-0">
@@ -33,8 +33,7 @@ export function ExpertSection() {
             />
             <p className="text-red-950 font-bold">Resultados</p>
             <p className="text-xs font-bold">
-              Habituados com o mercado, executamos nossos serviços de forma
-              eficiente e com total segurança.
+            Os melhores resultados graças a nossa equipe altamente qualificada !
             </p>
             <span className="text-sm font-bold hover:p-1 hover:bg-red-800 hover:text-zinc-100 hover:border-none hover:rounded-md">
               Saiba mais 5
@@ -49,8 +48,7 @@ export function ExpertSection() {
             />
             <p className="text-red-950 font-bold">Inteligência</p>
             <p className="text-xs font-bold">
-              Habituados com o mercado, executamos nossos serviços de forma
-              eficiente e com total segurança.
+            Temos as soluções ideais para empresas que precisam de agilidade, qualidade e confiança.
             </p>
             <span className="text-sm font-bold hover:p-1 hover:bg-red-800 hover:text-zinc-100 hover:border-none hover:rounded-md">
               Saiba mais 5
