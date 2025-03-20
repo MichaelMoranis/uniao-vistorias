@@ -2,10 +2,14 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { useState } from "react"; // Adicionado para controlar a visibilidade do menu
+import { useEffect, useState } from "react"; // Adicionado para controlar a visibilidade do menu
 
 export function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false); // Estado para controlar o menu
+
+  useEffect(() => {
+    setIsMenuOpen(true); // Garante que começa sempre fechado no cliente
+  }, []);
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen); // Alterna entre abrir e fechar o menu
@@ -21,7 +25,8 @@ export function Header() {
             width={60}
             height={60}
             alt="Picture of the author"
-            className="rounded-full"
+            className=" rounded-full"
+            style={{ width: "auto", height: "auto" }}
           />
           Vistorias
         </div>
@@ -67,30 +72,32 @@ export function Header() {
         </div>
 
         {/* Menu de navegação móvel (aparece quando o menu hambúrguer é clicado) */}
-        {isMenuOpen && (
-          <div className="md:hidden absolute top-16 left-0 w-full bg-indigo-950 p-4">
-            <ul className="flex flex-col gap-4">
-              <li className="rounded-md border-zinc-300 border-2">
-                <a
-                  href="#"
-                  className="text-white font-bold px-4 py-2 rounded-md border-zinc-300 border-1 hover:bg-red-600"
-                >
-                  Home
-                </a>
-              </li>
-              <li className="border-zinc-300 border-1">
-                <a href="#" className="text-gray-200 hover:text-red-600">
-                  Quem Somos
-                </a>
-              </li>
-              <li className="border-zinc-300 border-1">
-                <a href="#" className="text-gray-200 hover:text-red-600">
-                  Serviços
-                </a>
-              </li>
-            </ul>
-          </div>
-        )}
+        <div
+  className={`md:hidden absolute top-16 left-0 w-full bg-indigo-950 p-4 ${
+    isMenuOpen ? "block" : "hidden"
+  }`}
+>
+  <ul className="flex flex-col gap-4">
+    <li className="rounded-md border-zinc-300 border-2">
+      <a
+        href="#"
+        className="text-white font-bold px-4 py-2 rounded-md border-zinc-300 border-1 hover:bg-red-600"
+      >
+        Home
+      </a>
+    </li>
+    <li className="border-zinc-300 border-1">
+      <a href="#" className="text-gray-200 hover:text-red-600">
+        Quem Somos
+      </a>
+    </li>
+    <li className="border-zinc-300 border-1">
+      <a href="#" className="text-gray-200 hover:text-red-600">
+        Serviços
+      </a>
+    </li>
+  </ul>
+</div>
 
         {/* Botão de contato (oculto em telas menores que 768px) */}
         <div className="hidden md:block cta-button">

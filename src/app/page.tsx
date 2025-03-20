@@ -10,7 +10,7 @@ export default function Home() {
   return (
     <div className="w-full">
       <Banner
-        text="Soluções que geram resultados eficientes"
+        text="Garantimos soluções com resultados rapidos e eficientes"
         image={"/banner.jpg"}
       />
       <ImageTextSection
@@ -43,7 +43,7 @@ export default function Home() {
         />
       </SectionCards>
       <Section2
-        image={"/refinaria.jpg"}
+        image="/mapa-uniao.png"
         title="  Atuamos em todo o territorio nacional."
         txt1="  Oferecemos cobertura nacional com soluções personalizadas para
           análises e inspeções de riscos, garantindo agilidade e excelência em
@@ -53,7 +53,15 @@ export default function Home() {
           necessidades de cada cliente."
       />
       <BannerScroll />
-      <SectionTech />
+      <SectionTech
+        image={"/refinaria.jpg"}
+        titleh2="Inovação!"
+        title="Tecnologia com foco no sucesso !"
+        pargf1="Além de profissionais qualificados, qualidade no atendimento, transparência e comprometimento, acreditamos que a tecnologia faz toda a diferença para uma análise ágil, detalhada e eficiente. "
+        text1="Desdobramento técnico concreto"
+        text2=" Diligência na comunicação e envio!"
+        text3="Inspeções inteligentes e dinâmicas"
+      />
     </div>
   );
 }

@@ -17,6 +17,7 @@ const ImageTextSection = ({text, image, txtParag, txt2}: ImageTextSectionProps) 
           alt="banner"
           width={400}
           height={400} // Garante que a imagem cubra o contêiner sem distorcer
+          style={{ width: "auto", height: "auto" }}
         />
       </div>
       <div className="flex flex-col w-full md:w-96 p-2">
