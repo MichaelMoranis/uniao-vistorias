@@ -10,13 +10,13 @@ interface ImageTextSectionProps {
 
 const ImageTextSection = ({text, image, txtParag, txt2}: ImageTextSectionProps) => {
   return (
-    <section className="flex flex-col justify-center gap-20 m-4 md:flex-row">
+    <section className="flex flex-col items-center justify-center gap-20 m-4 md:flex-row">
       <div className="flex justify-center md:justify-end">
         <Image
         src={image}
           alt="banner"
-          width={400}
-          height={400} // Garante que a imagem cubra o contêiner sem distorcer
+          width={300}
+          height={300} // Garante que a imagem cubra o contêiner sem distorcer
           style={{ width: "auto", height: "auto" }}
         />
       </div>

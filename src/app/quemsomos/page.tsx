@@ -7,7 +7,7 @@ import SectionTech from "@/components/sectionTech";
 export default function QueSomos() {
   return (
     <>
-      <Banner text="Tudo sobre a União Vistorias!" image="/vistoria.jpg" />
+      <Banner text="Tudo sobre a União Vistorias!" image="/newbanner.jpg" />
       <ImageTextSection
         text="Nós estamos otimizando e transformando o mercado de seguros "
         image="/mind-mapping.png"
