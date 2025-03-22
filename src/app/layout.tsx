@@ -18,7 +18,7 @@ export default function RootLayout({
       <body
       >
         <Header />
-        <main className="pt-14 w-screen">{children}</main>
+        <main className="pt-12 w-screen">{children}</main>
         <Footer />
       </body>
     </html>

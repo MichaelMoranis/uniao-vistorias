@@ -2,8 +2,8 @@ import Image from "next/image";
 
 const Footer = () => {
   return (
-    <footer className="flex justify-center md:justify-around w-full gap-2 bg-indigo-950 text-white p-8 flex-wrap">
-      <div className="w-full md:w-72 text-zinc-400  h-40 md:h-20 mb-4">
+    <footer className="flex justify-center md:justify-around w-full gap-2 bg-red-900 text-white p-8 flex-wrap">
+      <div className="w-full md:w-72 text-white  h-40 md:h-20 mb-4">
         <h2 className="flex gap-2 text-2xl font-bold mb-2 mx-2 rounded-md">
           <Image src="/logo.jpg" width={30} height={30} alt="logo" /> União
           Vistorias
@@ -13,7 +13,7 @@ const Footer = () => {
       </div>
 
       {/* Institucional */}
-      <div className="w-full md:w-40 text-zinc-400 mx-2 text-left">
+      <div className="w-full md:w-40 text-white mx-2 text-left">
         <h3 className="text-xl font-semibold mb-4">Redes sociais</h3>
         <ul className="w-full">
           <li className="mb-2">
@@ -44,7 +44,7 @@ const Footer = () => {
         </ul>
       </div>
 
-      <div className="w-full md:w-40 text-zinc-400">
+      <div className="w-full md:w-40 text-white">
         <h3 className="text-xl font-semibold mb-4">Fale Conosco</h3>
         <ul className="text-sm">
           <li className="mb-2">
@@ -69,7 +69,7 @@ const Footer = () => {
           </li>
         </ul>
       </div>
-      <div className="w-full md:w-40 text-zinc-400">
+      <div className="w-full md:w-40 text-white">
         <h3 className="text-xl font-semibold mb-4">Institucional</h3>
         <ul className="text-sm">
           <li className="mb-2">
@@ -96,7 +96,7 @@ const Footer = () => {
       </div>
 
       {/* Endereço e Horário */}
-      <div className="w-full md:w-40 text-sm text-zinc-400">
+      <div className="w-full md:w-40 text-sm text-white">
         <h3 className="text-xl font-semibold mb-4">Endereço</h3>
         <p className="mb-2">Rua Nezinho Pamplona</p>
         <p className="mb-2">383 Jardim Ouro Branco</p>

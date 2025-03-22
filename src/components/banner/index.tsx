@@ -7,7 +7,7 @@ interface BannerProps {
 
 export function Banner({ text, image }: BannerProps) {
   return (
-    <div className="relative w-full h-96 overflow-hidden">
+    <div className="relative w-full h-screen overflow-hidden">
       {/* Imagem de fundo */}
       <Image src={image} alt="banner" fill className="object-cover" />
 

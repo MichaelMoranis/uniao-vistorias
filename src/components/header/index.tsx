@@ -25,19 +25,22 @@ export function Header() {
   ];
 
   return (
-    <header className="flex justify-center items-center w-full max-w-screen mx-auto p-1 bg-indigo-950 bg-opacity-90 text-zinc-300 fixed z-50">
+    <header className="flex justify-center items-center w-full max-w-screen mx-auto p-1 bg-[#ebd3d3] bg-opacity-90 text-zinc-300 fixed z-50">
       <div className="flex gap-10 justify-between md:justify-around px-4 items-center w-full">
         {/* Logo */}
-        <div className="flex items-center gap-2 p-2 logo hover:cursor-pointer">
+        <div className="flex items-center gap-2 p-2 logo hover:cursor-pointer font-bold">
           <Image
-            src="/logo.jpg"
-            width={60}
-            height={60}
+            src="/uniao-circulo.png"
+            width={100}
+            height={100}
             alt="Logo"
             className="rounded-full"
             style={{ width: "auto", height: "auto" }}
           />
-          Vistorias
+          <div className="text-red-900 font-bold text-2xl">
+            <p>Uniao</p>
+            <p>Vistorias</p>
+          </div>
         </div>
 
         {/* Navbar (oculto em telas menores que 768px) */}
@@ -46,7 +49,7 @@ export function Header() {
             {navLinks.map((link, index) => (
               <li key={index}>
                 <Link
-                  className="bg-indigo-950 text-white font-bold px-4 py-1 rounded-md border-zinc-300 border-1 hover:bg-red-800 hover:border-none hover:text-zinc-50 hover:shadow-sm p-6"
+                  className="bg-[#ebd3d3] text-red-900 font-bold px-4 py-1 rounded-md border-red-900 border-1 hover:bg-red-800 hover:border-none hover:text-zinc-50 hover:shadow-sm p-6"
                   href={link.href}
                 >
                   {link.label}
@@ -70,11 +73,11 @@ export function Header() {
 
         {/* Menu de navegação móvel (aparece quando o menu hambúrguer é clicado) */}
         <div
-          className={`md:hidden absolute top-16 right-0 w-[80%] h-screen flex flex-col gap-4 bg-indigo-950 py-12 ${
+          className={`md:hidden absolute top-2 left-0 w-[80%] h-screen flex flex-col gap-4 bg-indigo-950 ${
             isMenuOpen ? "block" : "hidden"
           }`}
         >
-          <div className="flex items-center gap-2 mx-2 logo hover:cursor-pointer">
+          <div className="flex items-center gap-2 mx-2 logo hover:cursor-pointer font-bold">
             <Image
               src="/logo.jpg"
               width={30}
@@ -85,14 +88,14 @@ export function Header() {
             />
             Vistorias
           </div>
+          <div
+            className={`fixed  bg-indigo-950 top-3 right-4 md:hidden hamburger-menu space-y-1.5 cursor-pointer`}
+            onClick={toggleMenu}
+          >
+            <div className="w-7 h-7 fond-bold bg-gray-300 rounded-md "><Image fill src="/close.png" alt="cross" /></div>
+          </div>
           <div className="h-full  flex flex-col justify-between gap-12">
-            <ul className="flex flex-col gap-1 mx-2">
-              <div
-                className={`fixed top-8 right-0 md:hidden hamburger-menu space-y-1.5 cursor-pointer`}
-                onClick={toggleMenu}
-              >
-                <div className="w-10 h-10 fond-bold">X</div>
-              </div>
+            <ul className="flex flex-col mx-2 pt-8 gap-6">
               {navLinks.map((link, index) => (
                 <li
                   key={index}
@@ -100,7 +103,7 @@ export function Header() {
                 >
                   <Link
                     href={link.href}
-                    className="flex items-center gap-4 text-white p-2 border-l-0 border-r-0 border-zinc-300"
+                    className="flex items-center gap-4 text-red-900 p-2 border-l-0 border-r-0 border-zinc-300"
                   >
                     {link.label}
                   </Link>
@@ -131,7 +134,7 @@ export function Header() {
         <div className="hidden md:block cta-button">
           <a
             href="#"
-            className="bg-indigo-950 text-white font-bold px-4 py-2 rounded-md border-zinc-300 border-1 hover:bg-red-800 hover:border-none hover:text-zinc-50"
+            className=" bg-[#ebd3d3] font-bold p-2 rounded-md border-red-900 text-red-900 border-1 hover:bg-red-800 hover:border-none hover:text-zinc-50"
           >
             Contato
           </a>

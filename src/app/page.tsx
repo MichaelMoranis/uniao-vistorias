@@ -11,7 +11,7 @@ export default function Home() {
     <div className="w-full">
       <Banner
         text="Garantimos soluções com resultados rapidos e eficientes"
-        image={"/banner.jpg"}
+        image={"/image-banner.jpeg"}
       />
       <ImageTextSection
         text="Especializados no ramo securitário"

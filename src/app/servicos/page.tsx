@@ -4,7 +4,7 @@ import ImageTextSection from "@/components/imageTextSection";
 import SectionCards from "@/components/sectionCards";
 import SectionTech from "@/components/sectionTech";
 
-export default function QuemSomos() {
+export default function Servicos() {
   return (
     <>
       <Banner text="Tudo sobre a União Vistorias!" image="/newbanner.jpg" />
