@@ -21,14 +21,14 @@ const ImageTextSection = ({text, image, txtParag, txt2}: ImageTextSectionProps) 
         />
       </div>
       <div className="flex flex-col w-full md:w-96 p-2">
-        <p className="text-red-600">Quem Somos</p>
-        <h2 className="text-2xl font-bold mb-4 md:text-left text-red-950">
+        <p className="text-red-900">Quem Somos</p>
+        <h2 className="text-2xl font-bold mb-4 md:text-left text-red-900">
           {text}
         </h2>
         <p className="flex flex-col w-full md:w-96 md:text-left">
         {txtParag}
         </p>
-        <p className=" w-full m-auto md:m-0 md:text-left text-zinc-400">
+        <p className=" w-full m-auto md:m-0 md:text-left text-zinc-700">
         {txt2}
         </p>
       </div>

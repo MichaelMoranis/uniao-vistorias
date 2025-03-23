@@ -14,7 +14,6 @@ export function Header() {
   const socialLinks = [
     { href: "#", icon: "/whats.png", alt: "Whatsapp" },
     { href: "#", icon: "/instagram.png", alt: "Instagram" },
-    { href: "#", icon: "/facebook.png", alt: "Facebook" },
     { href: "#", icon: "/linkedin.png", alt: "LinkedIn" },
   ];
 
@@ -25,31 +24,33 @@ export function Header() {
   ];
 
   return (
-    <header className="flex justify-center items-center w-full max-w-screen mx-auto p-1 bg-[#ebd3d3] bg-opacity-90 text-zinc-300 fixed z-50">
-      <div className="flex gap-10 justify-between md:justify-around px-4 items-center w-full">
+    <header
+      className={`flex justify-center items-center w-full max-w-screen mx-auto p-1 bg-red-900/80 text-zinc-300 fixed z-50 backdrop-blur-2xl`}
+    >
+      <div className="flex gap-10 justify-between md:justify-around px-4  items-center w-full h-16">
         {/* Logo */}
-        <div className="flex items-center gap-2 p-2 logo hover:cursor-pointer font-bold">
+        <div className="flex items-center gap-2 logo hover:cursor-pointer font-bold">
           <Image
             src="/uniao-circulo.png"
-            width={100}
-            height={100}
+            width={60}
+            height={10}
             alt="Logo"
             className="rounded-full"
             style={{ width: "auto", height: "auto" }}
           />
-          <div className="text-red-900 font-bold text-2xl">
-            <p>Uniao</p>
+          <div className="text-zinc-100 font-bold text-md hidden md:block">
+            <p>União</p>
             <p>Vistorias</p>
           </div>
         </div>
 
         {/* Navbar (oculto em telas menores que 768px) */}
-        <nav className="hidden md:flex">
-          <ul className="flex gap-1 space-x-5 md:space-x-8">
+        <nav className={`hidden md:flex`}>
+          <ul className="flex gap-12">
             {navLinks.map((link, index) => (
-              <li key={index}>
+              <li className="flex flex-wrap" key={index}>
                 <Link
-                  className="bg-[#ebd3d3] text-red-900 font-bold px-4 py-1 rounded-md border-red-900 border-1 hover:bg-red-800 hover:border-none hover:text-zinc-50 hover:shadow-sm p-6"
+                  className={`bg-[#ebd3d3] text-red-900 font-bold rounded-md border-red-900 border-1 hover:bg-red-800 hover:border-none p-1 hover:text-zinc-50 hover:shadow-sm`}
                   href={link.href}
                 >
                   {link.label}
@@ -73,37 +74,42 @@ export function Header() {
 
         {/* Menu de navegação móvel (aparece quando o menu hambúrguer é clicado) */}
         <div
-          className={`md:hidden absolute top-2 left-0 w-[80%] h-screen flex flex-col gap-4 bg-indigo-950 ${
+          className={`md:hidden absolute top-0 left-0 w-[80%] h-screen flex flex-col gap-4 bg-red-900/90 backdrop-blur-3xl ${
             isMenuOpen ? "block" : "hidden"
           }`}
         >
-          <div className="flex items-center gap-2 mx-2 logo hover:cursor-pointer font-bold">
+          <div className="flex items-center gap-2 m-2 logo hover:cursor-pointer font-bold">
             <Image
-              src="/logo.jpg"
-              width={30}
+              src="/uniao-circulo.png"
+              width={40}
               height={30}
               alt="Logo"
-              className="rounded-full"
+              className="flex flex-col rounded-full text-zinc-100"
               style={{ width: "auto", height: "auto" }}
             />
-            Vistorias
+            <div className="flex flex-col text-sm text-zinc-100 font-bold">
+              <p>União</p>
+              <p>Vistorias</p>
+            </div>
           </div>
           <div
-            className={`fixed  bg-indigo-950 top-3 right-4 md:hidden hamburger-menu space-y-1.5 cursor-pointer`}
+            className={`fixed bg-red-900/80 backdrop-blur-2xl top-3 right-4 md:hidden hamburger-menu space-y-1.5 cursor-pointer`}
             onClick={toggleMenu}
           >
-            <div className="w-7 h-7 fond-bold bg-gray-300 rounded-md "><Image fill src="/close.png" alt="cross" /></div>
+            <div className="w-7 h-7 fond-bold bg-gray-300 rounded-md">
+              <Image fill src="/close.png" alt="cross" />
+            </div>
           </div>
-          <div className="h-full  flex flex-col justify-between gap-12">
-            <ul className="flex flex-col mx-2 pt-8 gap-6">
+          <div className="h-full flex flex-col bg-red-900/80 backdrop-blur-2xl mt-0 justify-between gap-12">
+            <ul className="flex flex-col mx-2 pt-4 gap-2">
               {navLinks.map((link, index) => (
                 <li
                   key={index}
-                  className="rounded-md border-1  border-zinc-300"
+                  className="rounded-md border-1 border-zinc-300"
                 >
                   <Link
                     href={link.href}
-                    className="flex items-center gap-4 text-red-900 p-2 border-l-0 border-r-0 border-zinc-300"
+                    className="flex items-center gap-4 text-zinc-100 p-2 border-l-0 border-r-0 border-zinc-300"
                   >
                     {link.label}
                   </Link>
@@ -134,7 +140,7 @@ export function Header() {
         <div className="hidden md:block cta-button">
           <a
             href="#"
-            className=" bg-[#ebd3d3] font-bold p-2 rounded-md border-red-900 text-red-900 border-1 hover:bg-red-800 hover:border-none hover:text-zinc-50"
+            className={`bg-[#ebd3d3] font-bold p-1 rounded-md border-red-900 text-red-900 border-1 hover:bg-red-800 hover:border-none hover:text-zinc-50`}
           >
             Contato
           </a>

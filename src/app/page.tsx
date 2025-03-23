@@ -11,7 +11,7 @@ export default function Home() {
     <div className="w-full">
       <Banner
         text="Garantimos soluções com resultados rapidos e eficientes"
-        image={"/image-banner.jpeg"}
+        image={"/newbanner.jpg"}
       />
       <ImageTextSection
         text="Especializados no ramo securitário"
@@ -22,7 +22,7 @@ export default function Home() {
           empresarial."
         image={"/uniao-circulo.png"}
       />
-      <SectionCards text="Expertise que faz da UNIÃO VISTORIAS uma empresa destaque no segmento ">
+      <SectionCards text="Expertise que faz da UniãoVistorias uma empresa destaque no segmento ">
         <Cards
           image="/roda-dentada-cinza.png"
           txtsubtitle="Experiência"

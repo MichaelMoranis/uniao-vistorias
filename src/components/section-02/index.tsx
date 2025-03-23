@@ -22,8 +22,8 @@ const Section2 = ({ title, txt1, txt2, image }: Section2Props) => {
         />
       </div>
       <div className="flex flex-col p-2 mx-4 w-full md:w-96">
-        <h2 className="text-2xl font-bold mb-4 text-red-950">{title}</h2>
-        <p className=" text-zinc-400">{txt1}</p>
+        <h2 className="text-2xl font-bold mb-4 text-red-900">{title}</h2>
+        <p className=" text-zinc-600">{txt1}</p>
         <p className="w-full m-auto md:m-0 md:text-left text-zinc-400">
           {txt2}
         </p>

@@ -25,8 +25,8 @@ export default function SectionTech({image, titleh2, title, text2, pargf1, text1
         </div>
         <div className="flex flex-col w-full md:w-96 p-2">
           <div className="flex flex-col">
-            <p className="text-red-600">{titleh2}</p>
-            <h2 className="text-2xl font-bold mb-4 text-red-950">
+            <p className="text-red-900">{titleh2}</p>
+            <h2 className="text-2xl font-bold mb-4 text-red-900">
             {title}
             </h2>
             <p className="md:text-left mb-4 text-zinc-400">

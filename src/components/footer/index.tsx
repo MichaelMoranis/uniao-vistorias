@@ -5,7 +5,7 @@ const Footer = () => {
     <footer className="flex justify-center md:justify-around w-full gap-2 bg-red-900 text-white p-8 flex-wrap">
       <div className="w-full md:w-72 text-white  h-40 md:h-20 mb-4">
         <h2 className="flex gap-2 text-2xl font-bold mb-2 mx-2 rounded-md">
-          <Image src="/logo.jpg" width={30} height={30} alt="logo" /> União
+          <Image src="/uniao-circulo.png" width={90} height={60} alt="logo" /> União
           Vistorias
         </h2>
         <p className="mb-2">(77) 0000-9999</p>
@@ -26,12 +26,6 @@ const Footer = () => {
             <a href="#" className="flex items-center gap-2 hover:text-gray-400">
               <Image width={35} height={35}  src="/instagram.png" alt="Whatsapp" />
               Instagram
-            </a>
-          </li>
-          <li className="mb-2">
-            <a href="#" className="flex items-center gap-2 hover:text-gray-400">
-              <Image width={35} height={35}  src="/facebook.png" alt="Whatsapp" />
-              Facebook
             </a>
           </li>
           <li className="mb-2">
