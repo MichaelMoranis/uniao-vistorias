@@ -28,7 +28,6 @@ export default function BannerScroll() {
               className="w-full h-full object-contain"
             />
           </div>
-          {/* Adicione mais imagens conforme necessário */}
         </div>
       </div>
     </section>

@@ -25,10 +25,9 @@ export function Header() {
 
   return (
     <header
-      className={`flex justify-center items-center w-full max-w-screen mx-auto p-1 bg-red-900/80 text-zinc-300 fixed z-50 backdrop-blur-2xl`}
+      className="flex justify-center items-center w-full max-w-screen mx-auto p-1 bg-red-900/80 text-zinc-300 fixed z-50 backdrop-blur-2xl"
     >
       <div className="flex gap-10 justify-between md:justify-around px-4  items-center w-full h-16">
-        {/* Logo */}
         <div className="flex items-center gap-2 logo hover:cursor-pointer font-bold">
           <Image
             src="/uniao-circulo.png"
@@ -44,13 +43,12 @@ export function Header() {
           </div>
         </div>
 
-        {/* Navbar (oculto em telas menores que 768px) */}
-        <nav className={`hidden md:flex`}>
+        <nav className="hidden md:flex">
           <ul className="flex gap-12">
             {navLinks.map((link, index) => (
               <li className="flex flex-wrap" key={index}>
                 <Link
-                  className={`bg-[#ebd3d3] text-red-900 font-bold rounded-md border-red-900 border-1 hover:bg-red-800 hover:border-none p-1 hover:text-zinc-50 hover:shadow-sm`}
+                  className="bg-[#ebd3d3] text-red-900 font-bold rounded-md border-red-900 border-1 hover:bg-red-800 hover:border-none p-1 hover:text-zinc-50 hover:shadow-sm"
                   href={link.href}
                 >
                   {link.label}
@@ -60,7 +58,6 @@ export function Header() {
           </ul>
         </nav>
 
-        {/* Menu Hambúrguer (visível apenas em telas menores que 768px) */}
         <div
           className={`${
             isMenuOpen ? "hidden" : "block"
@@ -75,8 +72,7 @@ export function Header() {
         {/* Menu de navegação móvel (aparece quando o menu hambúrguer é clicado) */}
         <div
           className={`md:hidden absolute top-0 left-0 w-[80%] h-screen flex flex-col gap-4 bg-red-900/90 backdrop-blur-3xl ${
-            isMenuOpen ? "block" : "hidden"
-          }`}
+            isMenuOpen ? "block" : "hidden"}`}
         >
           <div className="flex items-center gap-2 m-2 logo hover:cursor-pointer font-bold">
             <Image
@@ -93,7 +89,7 @@ export function Header() {
             </div>
           </div>
           <div
-            className={`fixed bg-red-900/80 backdrop-blur-2xl top-3 right-4 md:hidden hamburger-menu space-y-1.5 cursor-pointer`}
+            className="fixed bg-red-900/80 backdrop-blur-2xl top-3 right-4 md:hidden hamburger-menu space-y-1.5 cursor-pointer"
             onClick={toggleMenu}
           >
             <div className="w-7 h-7 fond-bold bg-gray-300 rounded-md">

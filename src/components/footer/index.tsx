@@ -11,8 +11,6 @@ const Footer = () => {
         <p className="mb-2">(77) 0000-9999</p>
         <p className="mb-2">contato@uniaovistoria.com.br</p>
       </div>
-
-      {/* Institucional */}
       <div className="w-full md:w-40 text-white mx-2 text-left">
         <h3 className="text-xl font-semibold mb-4">Redes sociais</h3>
         <ul className="w-full">
@@ -88,8 +86,6 @@ const Footer = () => {
           </li>
         </ul>
       </div>
-
-      {/* Endereço e Horário */}
       <div className="w-full md:w-40 text-sm text-white">
         <h3 className="text-xl font-semibold mb-4">Endereço</h3>
         <p className="mb-2">Rua Nezinho Pamplona</p>
