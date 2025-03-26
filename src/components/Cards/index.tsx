@@ -18,7 +18,7 @@ export default function Cards({
       <div className="flex flex-col items-center justify-center w-full gap-2 md:w-72 border-2 border-none bg-blue-100 p-4 rounded-2xl">
         <Image width={100} height={100} src={image} alt="/experiencia.png" />
         <p className="text-red-900 font-bold">{txtsubtitle}</p>
-        <p className="text-xs text-center text-zinc-500 font-light">{txt1}</p>
+        <p className="text-sm text-center text-zinc-500 font-light">{txt1}</p>
         <span className="text-sm font-bold hover:p-1 hover:bg-red-800 hover:text-zinc-100 hover:border-none hover:rounded-md">
           {txtclick}
         </span>

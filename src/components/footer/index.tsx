@@ -16,19 +16,19 @@ const Footer = () => {
         <ul className="w-full">
           <li className="mb-2">
             <a href="#" className="flex items-center gap-2 hover:text-gray-400">
-              <Image width={40} height={40}  src="/whats.png" alt="Whatsapp" />
+              <Image width={40} height={40}  src="/social(1).png" alt="Whatsapp" className="bg-white rounded-full" />
               Whatsapp
             </a>
           </li>
           <li className="mb-2">
             <a href="#" className="flex items-center gap-2 hover:text-gray-400">
-              <Image width={35} height={35}  src="/instagram.png" alt="Whatsapp" />
+              <Image width={35} height={35}  src="/social(2).png" alt="Whatsapp" className="bg-white rounded-full" />
               Instagram
             </a>
           </li>
           <li className="mb-2">
             <a href="#" className="flex items-center gap-2 hover:text-gray-400">
-              <Image width={35} height={35}  src="/linkedin.png" alt="Whatsapp" />
+              <Image width={35} height={35}  src="/social(3).png" alt="Whatsapp" />
                 Linkedin                
             </a>
           </li>
@@ -61,37 +61,12 @@ const Footer = () => {
           </li>
         </ul>
       </div>
-      <div className="w-full md:w-40 text-white">
-        <h3 className="text-xl font-semibold mb-4">Institucional</h3>
-        <ul className="text-sm">
-          <li className="mb-2">
-            <a href="#" className="hover:text-gray-400">
-              Quem Somos
-            </a>
-          </li>
-          <li className="mb-2">
-            <a href="#" className="hover:text-gray-400">
-              Serviço
-            </a>
-          </li>
-          <li className="mb-2">
-            <a href="#" className="hover:text-gray-400">
-              privacidade
-            </a>
-          </li>
-          <li className="mb-2">
-            <a href="#" className="hover:text-gray-400">
-              Suporte
-            </a>
-          </li>
-        </ul>
-      </div>
       <div className="w-full md:w-40 text-sm text-white">
         <h3 className="text-xl font-semibold mb-4">Endereço</h3>
-        <p className="mb-2">Rua Nezinho Pamplona</p>
-        <p className="mb-2">383 Jardim Ouro Branco</p>
+        <p className="mb-2">Rua Carlos Drumond de Andrade, 135</p>
+        <p className="mb-2">Bandeirantes</p>
         <p className="mb-2">Barreiras-BA</p>
-        <p className="mb-2">CEP 47802300</p>
+        <p className="mb-2">CEP 47802-451</p>
       </div>
     </footer>
   );

@@ -15,8 +15,8 @@ const ImageTextSection = ({text, image, txtParag, txt2}: ImageTextSectionProps) 
         <Image
         src={image}
           alt="banner"
-          width={300}
-          height={300} // Garante que a imagem cubra o contêiner sem distorcer
+          width={400}
+          height={400} // Garante que a imagem cubra o contêiner sem distorcer
           style={{ width: "auto", height: "auto" }}
         />
       </div>

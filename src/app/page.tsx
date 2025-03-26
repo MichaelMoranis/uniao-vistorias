@@ -10,7 +10,7 @@ export default function Home() {
   return (
     <div className="w-full">
       <Banner
-        text="Garantimos soluções com resultados rapidos e eficientes"
+        text="Gestão e Análise de Riscos para Seguros"
         image={"/newbanner.jpg"}
       />
       <ImageTextSection

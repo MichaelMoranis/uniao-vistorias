@@ -10,10 +10,10 @@ interface SectionTechProps {
   text3: string
 }
 
-export default function SectionTech({image, titleh2, title, text2, pargf1, text1, text3}: SectionTechProps) {
+export default function SectionTech({image, titleh2, title,pargf1, }: SectionTechProps) {
   return (
     <section className="flex w-full justify-center">
-      <div className="flex flex-col md:flex-row justify-between items-center gap-10">
+      <div className="flex flex-col md:flex-row justify-between items-center gap-10 mx-4">
         <div className="flex justify-center w-full md:w-96">
           <Image
             src={image}
@@ -33,41 +33,6 @@ export default function SectionTech({image, titleh2, title, text2, pargf1, text1
               {pargf1}
             </p>
           </div>
-          <ul className="flex flex-col text-center gap-2 md:text-left text-zinc-400 w-full">
-            <li className="flex items-center gap-2 text-sm w-full">
-              <span>
-                <Image
-                  width={20}
-                  height={20}
-                  src="/double-check.png"
-                  alt="check"
-                />
-              </span>
-              {text1}
-            </li>
-            <li className="flex items-center gap-2 text-sm">
-              <span>
-                <Image
-                  width={20}
-                  height={20}
-                  src="/double-check.png"
-                  alt="check"
-                />
-              </span>
-              {text2}
-            </li>
-            <li className="flex items-center gap-2 text-sm">
-              <span>
-                <Image
-                  width={20}
-                  height={20}
-                  src="/double-check.png"
-                  alt="check"
-                />
-              </span>
-              {text3}
-            </li>
-          </ul>
         </div>
       </div>
     </section>

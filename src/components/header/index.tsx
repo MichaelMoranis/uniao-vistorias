@@ -93,7 +93,7 @@ export function Header() {
             onClick={toggleMenu}
           >
             <div className="w-7 h-7 fond-bold bg-gray-300 rounded-md">
-              <Image fill src="/close.png" alt="cross" />
+              <Image fill src="/close(1).png" alt="cross" />
             </div>
           </div>
           <div className="h-full flex flex-col bg-red-900/80 backdrop-blur-2xl mt-0 justify-between gap-12">
