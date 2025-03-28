@@ -1,38 +1,50 @@
 import Image from "next/image";
 
-const Footer = () => {
+export default function Footer() {
   return (
-    <footer className="flex justify-center md:justify-around w-full gap-2 bg-red-900 text-white p-8 flex-wrap">
+    <footer className="flex justify-center md:justify-around w-full gap-2 bg-[#931618] text-white p-8 flex-wrap font-bold">
       <div className="w-full md:w-72 text-white  h-40 md:h-20 mb-4">
         <h2 className="flex gap-2 text-2xl font-bold mb-2 mx-2 rounded-md">
-          <Image src="/uniao-circulo.png" width={90} height={60} alt="logo" /> União
-          Vistorias
+          <Image src="/uniao-circulo.png" width={90} height={60} alt="logo" />{" "}
+          União Vistorias
         </h2>
-        <p className="mb-2">(77) 0000-9999</p>
+        <p className="mb-2"> (48) 9223-2277</p>
+        <p className="mb-2"> (61) 9929-1016</p>
         <p className="mb-2">contato@uniaovistoria.com.br</p>
       </div>
       <div className="w-full md:w-40 text-white mx-2 text-left">
         <h3 className="text-xl font-semibold mb-4">Redes sociais</h3>
         <ul className="w-full">
           <li className="mb-2">
-            <a href="#" className="flex items-center gap-2 hover:text-gray-400">
-              <Image width={40} height={40}  src="/social(1).png" alt="Whatsapp" className="bg-white rounded-full" />
-              Whatsapp
-            </a>
-          </li>
-          <li className="mb-2">
-            <a href="#" className="flex items-center gap-2 hover:text-gray-400">
-              <Image width={35} height={35}  src="/social(2).png" alt="Whatsapp" className="bg-white rounded-full" />
+            <a href="#" className="flex items-center gap-2 hover:text-red-300">
+              <Image
+                width={35}
+                height={35}
+                src="/2.png"
+                alt="Whatsapp"
+                className="bg-white "
+              />
               Instagram
             </a>
           </li>
           <li className="mb-2">
-            <a href="#" className="flex items-center gap-2 hover:text-gray-400">
-              <Image width={35} height={35}  src="/social(3).png" alt="Whatsapp" />
-                Linkedin                
+            <a href="#" className="flex items-center gap-2 hover:text-red-300">
+              <Image
+                width={40}
+                height={40}
+                src="/1.png"
+                alt="Whatsapp"
+                className="bg-white "
+              />
+              Whatsapp
             </a>
           </li>
-          
+          <li className="mb-2">
+            <a href="#" className="flex items-center gap-2 hover:text-red-300 font-bold">
+              <Image width={35} height={35} src="/3.png" alt="Whatsapp" />
+              Linkedin
+            </a>
+          </li>
         </ul>
       </div>
 
@@ -70,6 +82,4 @@ const Footer = () => {
       </div>
     </footer>
   );
-};
-
-export default Footer;
+}

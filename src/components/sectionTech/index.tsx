@@ -13,7 +13,7 @@ interface SectionTechProps {
 export default function SectionTech({image, titleh2, title,pargf1, }: SectionTechProps) {
   return (
     <section className="flex w-full justify-center">
-      <div className="flex flex-col md:flex-row justify-between items-center gap-10 mx-4">
+      <div className="flex flex-col md:flex-row justify-between items-center gap-10 m-4">
         <div className="flex justify-center w-full md:w-96">
           <Image
             src={image}

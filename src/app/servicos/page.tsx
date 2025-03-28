@@ -10,32 +10,41 @@ export default function Servicos() {
       <Banner text="Prestamos serviços de qualidade!" image="/services.jpg" />
       <ImageTextSection
         text="Nós estamos otimizando e transformando o mercado de seguros "
-        image="/mind-mapping.png"
+        image="/indutrial.jpg"
         txtParag="Construímos nossa história através de uma metodologia moderna na relação de inspeções e vistorias securitárias na mais diversas áreas do mercado, sempre otimizando processos, crescendo frequentemente e proporcionando resultados únicos aos nossos clientes"
         txt2="."
       />
       <SectionCards text="Nós sabemos o que o mercado de seguros no Brasil precisa ">
         <Cards
-          image="/efficiency.png"
-          txtsubtitle="Eficiência"
-          txt1="Conduzimos nossas vistorias atendendo todos os prazos, critérios e medidas que garantem uma inspeção eficiente e assertiva."
+          image="/alert.png"
+          txtsubtitle="Riscos Massificados RM"
+          txt1="Atendimento com realização de vistorias
+              aos setores de comércio, serviços e
+             industrial com peritos qualificados para
+             atendimento nos mais variáveis
+             seguimentos empresariais."
           txtclick="Saiba mais"
         />
         <Cards
-          image="/secure-data.png"
-          txtsubtitle="Segurança"
-          txt1="Seguimos uma metodologia ágil porém clara, objetiva e segura, atestada através da nossa experiência de mercado."
+          image="/work.png"
+          txtsubtitle="Riscos de engenharia"
+          txt1="Vistorias em execução de obras com laudos preparados por
+           analistas especializados em Engenharia Civil. No processo de
+           análise consiste em duas etapas, sendo a inspeção in-loco do
+           terreno/obra e suas respectivas vizinhanças."
           txtclick="Saiba mais"
         />
         <Cards
-          image="/quality-assurance.png"
-          txtsubtitle="Qualidade"
-          txt1="Através da identidade de trabalho da SIGMA, impactamos o mercado de seguros com serviços de extrema qualidade."
+          image="/risco-industria.png"
+          txtsubtitle="Riscos Nomeados Grandes Riscos"
+          txt1="Atendimento com realização de vistorias em riscos de grande porte, com
+           solicitação de documentações importantes iniciada logo após o processo de
+           agendamento, havendo o acompanhamento do analista responsável"
           txtclick="Saiba mais"
         />
       </SectionCards>
       <SectionTech
-        image="/podcast-.png"
+        image="/computer.png"
         titleh2="Inovação e aprimoramento contínuo de processos "
         title="Um serviço de qualidade não precisa ser maçante !"
         text2="Evolução continua!"
