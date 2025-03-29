@@ -57,7 +57,7 @@ export default function Footer() {
           </li>
           <li className="mb-2">
             <a
-              href="https://wa.me/554598232277?text=Ol%C3%A1%2C%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es"
+              href="https://wa.me/554592232277?text=Ol%C3%A1%2C%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-2 hover:text-red-300 font-bold"

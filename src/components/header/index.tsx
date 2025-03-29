@@ -6,8 +6,6 @@ import { useEffect, useRef, useState } from "react";
 
 export function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-
-
   const [isOpen, setIsOpen] = useState(false);
   const dropdownRef = useRef<HTMLDivElement>(null);
 
@@ -23,12 +21,11 @@ export function Header() {
     return () => document.removeEventListener('mousedown', handleClickOutside);
   }, []);
 
-
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
 
   const socialLinks = [
     {
-      href: "https://wa.me/554598232277?text=Ol%C3%A1%2C%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es",
+      href: "https://wa.me/554592232277?text=Ol%C3%A1%2C%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es",
       icon: "/social-3.jpeg",
       alt: "Whatsapp",
     },
@@ -139,7 +136,6 @@ export function Header() {
                     href={link.href}
                     className="flex items-center gap-3 py-3 text-zinc-100 hover:bg-red-500/50 px-2 rounded"
                     onClick={toggleMenu}
-                    target=""
                   >
                     {link.label}
                   </Link>
@@ -148,17 +144,22 @@ export function Header() {
             </ul>
           </nav>
 
-          {/* Redes Sociais */}
-          <div className="absolute bottom-6 left-0 right-0 flex justify-center">
+          {/* Redes Sociais - MODIFICADO (posicionado mais alto) */}
+          <div className="absolute bottom-40 left-0 right-0 flex justify-center">
             <ul className="flex gap-6">
               {socialLinks.map((link, index) => (
                 <li key={index}>
-                  <a href={link.href} className="block p-2" target="_blank">
+                  <a 
+                    href={link.href} 
+                    className="block p-2 hover:scale-110 transition-transform" 
+                    target="_blank"
+                  >
                     <Image
-                      width={45}
-                      height={45}
+                      width={50}
+                      height={50}
                       src={link.icon}
                       alt={link.alt}
+                      className="rounded-full"
                     />
                   </a>
                 </li>
@@ -177,40 +178,39 @@ export function Header() {
 
         {/* Botão Contato (Desktop) */}
         <div className="hidden md:block relative" ref={dropdownRef}>
-      <button
-        onClick={() => setIsOpen(!isOpen)}
-        className="bg-[#ebd3d3] font-bold p-1 rounded-md border-red-900 text-red-900 border hover:bg-red-800 hover:border-none hover:text-zinc-50 transition-colors hover:cursor-pointer"
-      >
-        Contato
-      </button>
+          <button
+            onClick={() => setIsOpen(!isOpen)}
+            className="bg-[#ebd3d3] font-bold p-1 rounded-md border-red-900 text-red-900 border hover:bg-red-800 hover:border-none hover:text-zinc-50 transition-colors hover:cursor-pointer"
+          >
+            Contato
+          </button>
 
-      {isOpen && (
-        <div className="absolute right-0 mt-2 w-72 bg-[#931618] rounded-md shadow-lg z-50 border border-gray-200 font-bold">
-          <div className="py-1">
-            <a 
-              href="tel:4892232277" 
-              className="block px-4 py-2 text-sm text-gray-100 hover:bg-red-100 hover:text-red-900"
-            >
-              (48) 9223-2277
-            </a>
-            <a 
-              href="tel:6199291016" 
-              className="block px-4 py-2 text-sm text-gray-100 hover:bg-red-100 hover:text-red-900"
-            >
-              (61) 9929-1016
-            </a>
-            <a 
-              href="mailto:contato@uniaovistoria.com.br" 
-              className="block px-4 py-2 text-sm text-gray-100 hover:bg-red-100 hover:text-red-900"
-            >
-              contato@uniaovistoria.com.br
-            </a>
-          </div>
+          {isOpen && (
+            <div className="absolute right-0 mt-2 w-72 bg-[#931618] rounded-md shadow-lg z-50 border border-gray-200 font-bold">
+              <div className="py-1">
+                <a 
+                  href="tel:4892232277" 
+                  className="block px-4 py-2 text-sm text-gray-100 hover:bg-red-100 hover:text-red-900"
+                >
+                  (48) 9223-2277
+                </a>
+                <a 
+                  href="tel:6199291016" 
+                  className="block px-4 py-2 text-sm text-gray-100 hover:bg-red-100 hover:text-red-900"
+                >
+                  (61) 9929-1016
+                </a>
+                <a 
+                  href="mailto:contato@uniaovistoria.com.br" 
+                  className="block px-4 py-2 text-sm text-gray-100 hover:bg-red-100 hover:text-red-900"
+                >
+                  contato@uniaovistoria.com.br
+                </a>
+              </div>
+            </div>
+          )}
         </div>
-      )}
-    </div>
       </div>
     </header>
   );
 }
-
