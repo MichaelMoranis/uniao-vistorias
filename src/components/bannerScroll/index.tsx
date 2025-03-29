@@ -10,21 +10,21 @@ export default function BannerScroll() {
       </div>
       <div className="w-full overflow-x-auto">
         <div className="flex items-center justify-center gap-4 p-4 whitespace-nowrap">
-          <div className="w-40 h-40 flex-shrink-0">
+          <div className="w-40 h-30 flex-shrink-0 bg-blue-100 border-1 border-red-300 p-2 rounded-sm hover:drop-shadow-lg   hover:bg-zinc-100 hover:scale-105 transition-all ease-in">
             <Image
               width={160}
               height={160}
-              src="/logo_fairfax.png"
+              src="/ffi.png"
               alt="seguros"
               className="w-full h-full object-contain"
             />
           </div>
-          <div className=" w-40 h-40 flex-shrink-0">
+          <div className=" w-40 h-30 flex-shrink-0 border-1 bg-blue-100 border-red-300 p-2 rounded-sm hover:drop-shadow-lg  hover:scale-105 hover:bg-zinc-100 transition-all ease-in">
             <Image
-              src="/axa1.jpg"
+              src="/axa.png"
               alt="seguros"
-              width={160}
-              height={160}
+              width={100}
+              height={100}
               className="w-full h-full object-contain"
             />
           </div>

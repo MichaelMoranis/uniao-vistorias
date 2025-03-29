@@ -30,13 +30,13 @@ export default function Home() {
           txtclick="saiba mais"
         />
         <Cards
-          image="/brain.png"
+          image="/ia.png"
           txtsubtitle="Inteligência"
           txt1="Temos as soluções ideais para empresas que precisam de agilidade, qualidade e confiança."
           txtclick="saiba mais"
         />
         <Cards
-          image="/search.png"
+          image="/resultado.png"
           txtsubtitle="Resultado"
           txt1="Os melhores resultados através da nossa equipe qualificada e know-how do mercado."
           txtclick="saiba mais"

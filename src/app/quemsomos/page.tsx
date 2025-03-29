@@ -20,19 +20,19 @@ export default function QuemSomos() {
       />
       <SectionCards text="Nós sabemos o que o mercado de seguros no Brasil precisa ">
         <Cards
-          image="/efficiency(1).png"
+          image="/eficiencia.png"
           txtsubtitle="Eficiência"
           txt1="Conduzimos nossas vistorias atendendo todos os prazos, critérios e medidas que garantem uma inspeção eficiente e assertiva."
           txtclick="Saiba mais"
         />
         <Cards
-          image="/lock.png"
+          image="/seguranca.png"
           txtsubtitle="Segurança"
           txt1="Seguimos uma metodologia ágil porém clara, objetiva e segura, atestada através da nossa experiência de mercado."
           txtclick="Saiba mais"
         />
         <Cards
-          image="/quality-control.png"
+          image="/qualidade.png"
           txtsubtitle="Qualidade"
           txt1="Através da identidade de trabalho da UniãoVistorias, impactamos o mercado de seguros com serviços de extrema qualidade."
           txtclick="Saiba mais"
